@@ -39,7 +39,7 @@
 | 2.3 | Add Lighthouse CI config                      | AI       |          | [x]    | Lighthouse CI setup and basic configuration.           |
 | 2.4 | Add GitHub Actions workflow for CI            | AI       |          | [x]    | Created basic CI workflow for lint, test, build        |
 | 2.5 | Add Chromatic/Storybook for visual regression |          |          | [x]    | Initial setup complete. Remember to add project token. |
-| 2.6 | Add accessibility testing (axe-core)          |          |          | [ ]    |                                                        |
+| 2.6 | Add accessibility testing (axe-core)          |          |          | [x]    | Integrated axe-core with Playwright for E2E tests.     |
 
 ## Phase 3: Automation Scripts
 | #   | Task                               | Assignee | Due Date | Status | Notes |

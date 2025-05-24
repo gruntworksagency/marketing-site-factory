@@ -72,6 +72,9 @@ importers:
         specifier: ^3.3.6
         version: 3.3.6
     devDependencies:
+      '@axe-core/playwright':
+        specifier: ^4.10.1
+        version: 4.10.1(playwright-core@1.52.0)
       '@next/bundle-analyzer':
         specifier: ^14.0.4
         version: 14.0.4
@@ -90,6 +93,9 @@ importers:
       '@types/react-dom':
         specifier: ^18
         version: 18.0.0
+      axe-core:
+        specifier: ^4.10.3
+        version: 4.10.3
       prisma:
         specifier: ^5.7.1
         version: 5.7.1
@@ -209,6 +215,15 @@ packages:
       '@csstools/css-parser-algorithms': 3.0.4(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-tokenizer': 3.0.3
       lru-cache: 10.4.3
+    dev: true
+
+  /@axe-core/playwright@4.10.1(playwright-core@1.52.0):
+    resolution: {integrity: sha512-EV5t39VV68kuAfMKqb/RL+YjYKhfuGim9rgIaQ6Vntb2HgaCaau0h98Y3WEUqW1+PbdzxDtDNjFAipbtZuBmEA==}
+    peerDependencies:
+      playwright-core: '>= 1.0.0'
+    dependencies:
+      axe-core: 4.10.3
+      playwright-core: 1.52.0
     dev: true
 
   /@babel/code-frame@7.27.1:
