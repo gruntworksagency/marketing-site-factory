@@ -1,0 +1,33 @@
+{
+  "name": "marketing-site-factory",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "biome check --apply ./",
+    "test": "turbo run test",
+    "test:e2e": "turbo run test:e2e",
+    "type-check": "turbo run type-check",
+    "dev:db": "docker-compose up -d postgres && sleep 3 && pnpm --filter website db:studio",
+    "dev:db:start": "docker-compose up -d",
+    "dev:db:stop": "docker-compose down",
+    "dev:db:reset": "docker-compose down -v && docker-compose up -d && sleep 5 && pnpm --filter website db:push",
+    "new-client": "./scripts/new-client.sh",
+    "deploy:staging": "./scripts/deploy-staging.sh",
+    "deploy:prod": "./scripts/deploy-prod.sh"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.4.1",
+    "@playwright/test": "^1.52.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@vitest/ui": "^3.1.4",
+    "jsdom": "^26.1.0",
+    "playwright": "^1.52.0",
+    "turbo": "^1.11.2",
+    "vitest": "^3.1.4"
+  },
+  "packageManager": "pnpm@8.6.0"
+}

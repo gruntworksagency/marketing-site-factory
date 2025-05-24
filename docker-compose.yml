@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: marketing-site-factory-postgres
+    environment:
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: dev_password
+      POSTGRES_DB: marketing_sites
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: marketing-site-factory-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: marketing-site-factory-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@marketing-factory.local
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      - postgres
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:
+  pgadmin_data: 

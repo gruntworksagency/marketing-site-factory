@@ -1,0 +1,11 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# General Rules for Cursor
+
+1. Use [IMPLEMENTATION_GUIDE.md](mdc:docs/IMPLEMENTATION_GUIDE.md) in ~/docs/ as your main guide for this project
+2. Use [IMPLEMENTATION_CHECKLIST.md](mdc:docs/IMPLEMENTATION_CHECKLIST.md) in ~/docs/ to track this projects progress
+3. Before every operation/run check [IMPLEMENTATION_CHECKLIST.md](mdc:docs/IMPLEMENTATION_CHECKLIST.md) 
+4. After every operation/run update [IMPLEMENTATION_CHECKLIST.md](mdc:docs/IMPLEMENTATION_CHECKLIST.md)
