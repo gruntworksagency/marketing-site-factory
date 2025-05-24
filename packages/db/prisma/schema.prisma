@@ -1,0 +1,56 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Client {
+  id              String    @id @default(cuid())
+  business_name   String
+  client_slug     String    @unique
+  city            String
+  state           String
+  business_type   String    // e.g., landscaping, hvac, roofing, plumbing, general
+  client_settings Json?
+  created_at      DateTime  @default(now())
+  updated_at      DateTime  @updatedAt
+
+  @@map("clients")
+}
+
+model ContactSubmission {
+  id           String   @id @default(cuid())
+  name         String
+  email        String
+  phone        String?
+  message      String
+  client_slug  String? // To associate with a client if applicable
+  submitted_at DateTime @default(now())
+
+  // Optional: Link to a Client if submissions are client-specific
+  // client       Client?  @relation(fields: [client_id], references: [id])
+  // client_id    String?
+
+  @@map("contact_submissions")
+}
+
+model AnalyticsEvent {
+  id           String   @id @default(cuid())
+  event_type   String   // e.g., page_view, button_click, form_submission
+  event_data   Json?    // Any additional data associated with the event
+  client_slug  String?  // To associate with a client if applicable
+  session_id   String?  // To group events by user session
+  timestamp    DateTime @default(now())
+
+  // Optional: Link to a Client if events are client-specific
+  // client       Client?  @relation(fields: [client_id], references: [id])
+  // client_id    String?
+
+  @@index([event_type])
+  @@index([client_slug])
+  @@index([session_id])
+  @@map("analytics_events")
+} 

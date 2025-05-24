@@ -42,19 +42,19 @@
 | 2.6 | Add accessibility testing (axe-core)          |          |          | [x]    | Integrated axe-core with Playwright for E2E tests.     |
 
 ## Phase 3: Automation Scripts
-| #   | Task                               | Assignee | Due Date | Status | Notes |
-| --- | ---------------------------------- | -------- | -------- | ------ | ----- |
-| 3.1 | Create `scripts/new-client.sh`     |          |          | [ ]    |       |
-| 3.2 | Create `scripts/deploy-staging.sh` |          |          | [ ]    |       |
-| 3.3 | Create `scripts/deploy-prod.sh`    |          |          | [ ]    |       |
+| #   | Task                               | Assignee | Due Date | Status | Notes                                                                                                                                                                                     |
+| --- | ---------------------------------- | -------- | -------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 3.1 | Create `scripts/new-client.sh`     | AI       |          | [x]    | Script created with argument validation, template copying, package.json update, .env.local and client.ts generation, placeholder homepage, git init, pnpm install, and next steps output. |
+| 3.2 | Create `scripts/deploy-staging.sh` | AI       |          | [x]    | Basic script created.                                                                                                                                                                     |
+| 3.3 | Create `scripts/deploy-prod.sh`    | AI       |          | [x]    | Basic script created.                                                                                                                                                                     |
 
 ## Phase 4: Database & API
-| #   | Task                                  | Assignee | Due Date | Status | Notes |
-| --- | ------------------------------------- | -------- | -------- | ------ | ----- |
-| 4.1 | Add Prisma schema and generate client |          |          | [ ]    |       |
-| 4.2 | Implement contact form API route      |          |          | [ ]    |       |
-| 4.3 | Implement client config API route     |          |          | [ ]    |       |
-| 4.4 | Add analytics/event tracking API      |          |          | [ ]    |       |
+| #   | Task                                  | Assignee | Due Date | Status | Notes                                                                  |
+| --- | ------------------------------------- | -------- | -------- | ------ | ---------------------------------------------------------------------- |
+| 4.1 | Add Prisma schema and generate client | AI       |          | [x]    | Created schema.prisma, db package, installed Prisma, generated client. |
+| 4.2 | Implement contact form API route      | AI       |          | [x]    | Created POST /api/contact, saves to DB, basic validation.              |
+| 4.3 | Implement client config API route     | AI       |          | [x]    | Created GET /api/client-config/[slug] to fetch client settings.        |
+| 4.4 | Add analytics/event tracking API      | AI       |          | [x]    | Created POST /api/track to save analytics events. Basic.               |
 
 ## Phase 5: SEO & Performance
 | #   | Task                                      | Assignee | Due Date | Status | Notes |

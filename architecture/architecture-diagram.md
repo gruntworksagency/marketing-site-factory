@@ -1,8 +1,8 @@
-```mermaid
 %% Marketing Site Factory - Architecture Diagram
 %% This diagram shows the complete system architecture including monorepo structure,
 %% data flow, deployment pipeline, and component relationships
 
+```mermaid
 graph TB
     %% Styling
     classDef appBox fill:#e1f5fe,stroke:#01579b,stroke-width:2px
@@ -97,4 +97,3 @@ graph TB
     class NEWCLIENT,DEPLOY_STAGING,DEPLOY_PROD scriptBox
     class POSTGRES,REDIS,PGADMIN infraBox
     class VERCEL,RESEND,ANALYTICS_EXT dataBox 
-```
