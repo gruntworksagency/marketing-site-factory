@@ -1,7 +1,3 @@
-%% Marketing Site Factory - Architecture Diagram
-%% This diagram shows the complete system architecture including monorepo structure,
-%% data flow, deployment pipeline, and component relationships
-
 ```mermaid
 graph TB
     %% Styling
@@ -96,4 +92,4 @@ graph TB
     class CLIENT1,CLIENT2,CLIENT3,CLIENTN clientBox
     class NEWCLIENT,DEPLOY_STAGING,DEPLOY_PROD scriptBox
     class POSTGRES,REDIS,PGADMIN infraBox
-    class VERCEL,RESEND,ANALYTICS_EXT dataBox 
+    class VERCEL,RESEND,ANALYTICS_EXT dataBox
