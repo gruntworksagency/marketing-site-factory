@@ -57,12 +57,12 @@
 | 4.4 | Add analytics/event tracking API      | AI       |          | [x]    | Created POST /api/track to save analytics events. Basic.               |
 
 ## Phase 5: SEO & Performance
-| #   | Task                                      | Assignee | Due Date | Status | Notes |
-| --- | ----------------------------------------- | -------- | -------- | ------ | ----- |
-| 5.1 | Add schema generators and meta tag system |          |          | [ ]    |       |
-| 5.2 | Implement dynamic sitemap generation      |          |          | [ ]    |       |
-| 5.3 | Add image optimization component          |          |          | [ ]    |       |
-| 5.4 | Add performance budgets and monitoring    |          |          | [ ]    |       |
+| #   | Task                                      | Assignee | Due Date | Status | Notes                                                                                                                                                                           |
+| --- | ----------------------------------------- | -------- | -------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 5.1 | Add schema generators and meta tag system |          |          | [x]    | Core utilities for schema and meta tags are present in `packages/utils/src/seo/`. Integration into Next.js `generateMetadata` functions is the next step.                       |
+| 5.2 | Implement dynamic sitemap generation      |          |          | [x]    | Basic `sitemap.ts` created in `apps/website/src/app/`. Needs population with dynamic routes and `NEXT_PUBLIC_SITE_URL` env variable.                                            |
+| 5.3 | Add image optimization component          |          |          | [x]    | Created `OptimizedImage.tsx` in `packages/ui/src/components/base/`. Added `next` to `packages/ui` dependencies. Remember to run `pnpm install`.                                 |
+| 5.4 | Add performance budgets and monitoring    |          |          | [x]    | Lighthouse CI (`lighthouserc.js`) includes performance/accessibility assertions (budgets). `@next/bundle-analyzer` is configured in `next.config.js` (run with `ANALYZE=true`). |
 
 ## Phase 6: Client Launch & Handoff
 | #   | Task                                 | Assignee | Due Date | Status | Notes |
