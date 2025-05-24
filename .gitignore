@@ -86,3 +86,4 @@ logs
 # Chromatic
 storybook-static/
 build-storybook.log 
+*storybook.log

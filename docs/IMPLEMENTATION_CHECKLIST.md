@@ -32,14 +32,14 @@
 | 1.4 | Create `packages/utils/` and add SEO/schema utilities         | AI       |          | [x]    | SEO schemas, meta tags, and URL utilities added |
 
 ## Phase 2: Testing & CI/CD
-| #   | Task                                          | Assignee | Due Date | Status | Notes                                           |
-| --- | --------------------------------------------- | -------- | -------- | ------ | ----------------------------------------------- |
-| 2.1 | Add Vitest config and sample tests            | AI       |          | [x]    | Vitest setup with sample Button component test. |
-| 2.2 | Add Playwright config and E2E tests           | AI       |          | [x]    | Playwright setup with basic homepage E2E test.  |
-| 2.3 | Add Lighthouse CI config                      | AI       |          | [x]    | Lighthouse CI setup and basic configuration.    |
-| 2.4 | Add GitHub Actions workflow for CI            | AI       |          | [x]    | Created basic CI workflow for lint, test, build |
-| 2.5 | Add Chromatic/Storybook for visual regression |          |          | [ ]    |                                                 |
-| 2.6 | Add accessibility testing (axe-core)          |          |          | [ ]    |                                                 |
+| #   | Task                                          | Assignee | Due Date | Status | Notes                                                  |
+| --- | --------------------------------------------- | -------- | -------- | ------ | ------------------------------------------------------ |
+| 2.1 | Add Vitest config and sample tests            | AI       |          | [x]    | Vitest setup with sample Button component test.        |
+| 2.2 | Add Playwright config and E2E tests           | AI       |          | [x]    | Playwright setup with basic homepage E2E test.         |
+| 2.3 | Add Lighthouse CI config                      | AI       |          | [x]    | Lighthouse CI setup and basic configuration.           |
+| 2.4 | Add GitHub Actions workflow for CI            | AI       |          | [x]    | Created basic CI workflow for lint, test, build        |
+| 2.5 | Add Chromatic/Storybook for visual regression |          |          | [x]    | Initial setup complete. Remember to add project token. |
+| 2.6 | Add accessibility testing (axe-core)          |          |          | [ ]    |                                                        |
 
 ## Phase 3: Automation Scripts
 | #   | Task                               | Assignee | Due Date | Status | Notes |
