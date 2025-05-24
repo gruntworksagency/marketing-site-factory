@@ -35,7 +35,7 @@
 | #   | Task                                          | Assignee | Due Date | Status | Notes                                           |
 | --- | --------------------------------------------- | -------- | -------- | ------ | ----------------------------------------------- |
 | 2.1 | Add Vitest config and sample tests            | AI       |          | [x]    | Vitest setup with sample Button component test. |
-| 2.2 | Add Playwright config and E2E tests           |          |          | [ ]    |                                                 |
+| 2.2 | Add Playwright config and E2E tests           | AI       |          | [x]    | Playwright setup with basic homepage E2E test.  |
 | 2.3 | Add Lighthouse CI config                      |          |          | [ ]    |                                                 |
 | 2.4 | Add GitHub Actions workflow for CI            |          |          | [ ]    |                                                 |
 | 2.5 | Add Chromatic/Storybook for visual regression |          |          | [ ]    |                                                 |
@@ -99,4 +99,4 @@
 - Update the status as you progress: [ ] Not started, [~] In progress, [x] Complete.
 - Use the Notes column for blockers, links, or additional context.
 
---- 
+---
